@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>프로이직러 프로젝트!</h1>
+        <h1>Pro00er Project!</h1>
     </header>
 </template>
 
