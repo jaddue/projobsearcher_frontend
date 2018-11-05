@@ -2,7 +2,6 @@
   <div id="app">
     <div class="wrap">
       <ProjobsHeader></ProjobsHeader>
-      <ProjobsAside></ProjobsAside>
       <ProjobsList></ProjobsList>
       <ProjobsFooter></ProjobsFooter>
     </div>
@@ -11,14 +10,12 @@
 
 <script>
 import ProjobsHeader from "./components/ProjobsHeader.vue";
-import ProjobsAside from "./components/ProjobsAside.vue";
 import ProjobsList from "./components/ProjobsList.vue";
 import ProjobsFooter from "./components/ProjobsFooter.vue";
 export default {
   components: {
     //컴포넌트 태그명 : 컴포넌트 내용
     ProjobsHeader: ProjobsHeader,
-    ProjobsAside: ProjobsAside,
     ProjobsList: ProjobsList,
     ProjobsFooter: ProjobsFooter
   }
@@ -57,8 +54,15 @@ button {
 }
 
 .wrap{
-  width:1200px;
-  margin:0 auto;
   position:relative;
+}
+
+.blind{
+  position:absolute;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  margin:-1px;
+  width:1px;
+  height: 1px;
 }
 </style>
